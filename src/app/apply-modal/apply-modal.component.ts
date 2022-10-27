@@ -158,6 +158,10 @@ export class ApplyModalComponent implements OnInit {
       required: true,
       hidden: false,
       description: `${this.translate.instant('ACCEPTED_RESUME')} ${SettingsService.settings.acceptedResumeTypes.toString()}`,
+      tipWell: {
+        icon: 'info',
+        tip: `${this.translate.instant('UPLOAD_CV')}`
+      }
     });
 
     this.formControls = [this.firstName, this.lastName, this.email, this.phoneNumber, this.resume];

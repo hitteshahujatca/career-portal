@@ -8,6 +8,8 @@
         <span class="separator" *ngIf="(job.address?.city || job.address?.state) && job.employmentType">|</span>
         <!-- TYPE -->
         <span class="type">{{ job.employmentType }}</span>
+        <span class="separator" *ngIf="job.id">|</span>
+        <span> &nbsp; Job Reference ID: {{ job.id }}</span>
       </div>
     </header>
     <section *ngIf="!loading" [ngClass]="{ ios: isIos }">

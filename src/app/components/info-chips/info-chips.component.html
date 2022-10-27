@@ -7,6 +7,9 @@
       <ng-container *ngSwitchCase="'string'">
           {{ job[chip?.field] || job[chip] }}
       </ng-container>
+      <ng-container *ngSwitchCase="'jobReference'">
+        <span>Reference ID :</span>{{ job[chip?.field] || job[chip] }}
+    </ng-container>
       <ng-container *ngSwitchCase="'mediumDate'">
           {{ job[chip?.field ] | date: 'mediumDate' }}
       </ng-container>

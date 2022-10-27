@@ -88,10 +88,9 @@
       "salaryUnit"
     ],
     "jobInfoChips": [
-      "employmentType",
       {
-        "type": "mediumDate",
-        "field": "dateLastPublished"
+        "type" : "jobReference",
+        "field": "id"
       }
     ],
     "showCategory": true,
